@@ -30,14 +30,14 @@ cargo watch -x run
 *Vista principal que muestra todos los partidos disponibles obtenidos mediante `GET /api/matches`*
 
 ### Formulario de Creación
-![Crear partido](./screenshots/create-form.png)  
+![Crear partido](https://github.com/user-attachments/assets/de71b9af-a10a-431e-9ff0-a93c7539c82b)
 *Formulario que envía datos a `POST /api/matches` para crear nuevos partidos*
 
 ### Detalle de Partido
-![Detalle de partido](./screenshots/match-detail.png)  
+![Detalle de partido](https://github.com/user-attachments/assets/325b9c94-6416-4a6b-bfae-b7141a7780ab)
 *Vista detallada que consume `GET /api/matches/{id}` para mostrar información específica*
 
 ### Edición de Partido
-![Editar partido](./screenshots/edit-form.png)  
+![Editar partido](https://github.com/user-attachments/assets/40b333e3-7774-4295-b1ac-755250e8325b)
 *Formulario de edición que utiliza `PUT /api/matches/{id}` para actualizar datos*
 
