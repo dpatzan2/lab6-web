@@ -1,0 +1,86 @@
+API de Gestión de Partidos Deportivos - Guía de Uso
+
+Descripción:
+-------------
+Este API RESTful permite la gestion partidos, está construida en Rust con Actix-web y utiliza MongoDB como base de datos.
+
+Endpoints Principales:
+-----------------------
+1. GET /api/matches
+   - Descripción: Obtiene la lista completa de partidos.
+   - Respuesta: Array de objetos Match.
+
+2. GET /api/matches/{id}
+   - Descripción: Obtiene los detalles de un partido específico.
+   - Parámetros: id (ObjectId en formato hexadecimal).
+   - Respuesta: Objeto Match.
+   - Errores: 400 (ID inválido) / 404 (Partido no encontrado).
+
+3. POST /api/matches
+   - Descripción: Crea un nuevo partido.
+   - Cuerpo: JSON con "home_team", "away_team" y "match_date".
+   - Respuesta: Objeto Match con campos inicializados (contadores en cero).
+   - Errores: 500 (Error al insertar).
+
+4. PUT /api/matches/{id}
+   - Descripción: Actualiza la información básica de un partido (equipos y fecha).
+   - Parámetros: id (ObjectId).
+   - Cuerpo: JSON con nuevos valores para "home_team", "away_team" y "match_date".
+   - Respuesta: Mensaje de éxito.
+   - Errores: 400, 404, 500.
+
+5. DELETE /api/matches/{id}
+   - Descripción: Elimina un partido.
+   - Parámetros: id (ObjectId).
+   - Respuesta: Mensaje de éxito.
+   - Errores: 400, 404, 500.
+
+6. PATCH /api/matches/{id}/goals
+   - Descripción: Incrementa el contador de goles del partido.
+   - Parámetros: id (ObjectId).
+   - Respuesta: Mensaje de éxito.
+   - Errores: 400, 404, 500.
+
+7. PATCH /api/matches/{id}/yellowcards
+   - Descripción: Incrementa el contador de tarjetas amarillas.
+   - Parámetros: id (ObjectId).
+   - Respuesta: Mensaje de éxito.
+   - Errores: 400, 404, 500.
+
+8. PATCH /api/matches/{id}/redcards
+   - Descripción: Incrementa el contador de tarjetas rojas.
+   - Parámetros: id (ObjectId).
+   - Respuesta: Mensaje de éxito.
+   - Errores: 400, 404, 500.
+
+9. PATCH /api/matches/{id}/extratime
+   - Descripción: Incrementa el tiempo extra del partido.
+   - Parámetros: id (ObjectId).
+   - Respuesta: Mensaje de éxito.
+   - Errores: 400, 404, 500.
+
+Uso y Ejemplos:
+----------------
+1. Clonar el repositorio y ejecutar el proyecto, tener MongoDB corriendo localmente:
+   $ git clone https://github.com/dpatzan2/lab6-web.git
+   $ cd mi-primer-api
+   $ cargo watch -x run
+
+2. Acceder a la API en: http://127.0.0.1:8080
+
+
+4. Ejemplo para crear un partido:
+   - Método: POST /api/matches
+   - body (JSON):
+     {
+       "home_team": "Equipo A",
+       "away_team": "Equipo B",
+       "match_date": "2025-03-28"
+     }
+
+Requisitos:
+------------
+- Rust 1.70+ y Actix-web 4.0+.
+- MongoDB 6.0+ (corriendo localmente o accesible en red).
+- Configuración flexible de CORS para desarrollo.
+
