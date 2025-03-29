@@ -59,7 +59,7 @@ Endpoints Principales:
    - Respuesta: Mensaje de éxito.
    - Errores: 400, 404, 500.
 
-Uso y Ejemplos:
+Uson y Ejemplos:
 ----------------
 1. Clonar el repositorio y ejecutar el proyecto, tener MongoDB corriendo localmente:
    $ git clone https://github.com/dpatzan2/lab6-web.git

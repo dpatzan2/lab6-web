@@ -6,7 +6,7 @@
 
 ## 📌 Descripción
 
-API RESTful para gestión de partidos deportivos que permite crear, leer, actualizar y eliminar información sobre partidos deportivos. Desarrollada con tecnologías modernas y robustas:
+API RESTful para gestión de partidos deportivos que permite crear, leer, actualizar y eliminar información sobre partidos deportivos, se desarrolo con:
 
 - **Backend**: Rust + Actix-web para alto rendimiento y seguridad
 - **Base de datos**: MongoDB para flexibilidad en el esquema de datos
@@ -60,7 +60,6 @@ cargo watch -x run  # Para desarrollo con recarga automática
 
 ![Listado de partidos](https://github.com/user-attachments/assets/6edcbaa8-372e-4f18-8c32-32ef815858f7)
 
-
 *Vista principal que muestra todos los partidos disponibles obtenidos mediante `GET /api/matches`*
 
 ### Formulario de Creación
@@ -72,7 +71,6 @@ cargo watch -x run  # Para desarrollo con recarga automática
 ### Detalle de Partido
 
 ![Detalle de partido](https://github.com/user-attachments/assets/c46038e9-3d3c-4e15-9589-409f110d83aa)
-
 
 *Vista detallada que consume `GET /api/matches/{id}` para mostrar información específica*
 
@@ -89,7 +87,9 @@ cargo watch -x run  # Para desarrollo con recarga automática
 *Campo para insertar el id del partido a elimininar*
 
 # 🏆 API de Gestión de Partidos Deportivos
+
 ## 🛠️ Desarrollo
+
 ### Estructura del Proyecto
 
 La estructura actual del proyecto está organizada de la siguiente manera:
@@ -105,6 +105,7 @@ mi-primer-api/
 ```
 
 Cada archivo cumple un rol específico:
+
 - `src/main.rs`: Contiene toda la lógica de la API, incluyendo modelos, rutas y controladores
 - `Cargo.toml`: Gestiona las dependencias y metadatos del proyecto
 - `Cargo.lock`: Asegura builds reproducibles fijando versiones exactas
