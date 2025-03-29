@@ -27,8 +27,8 @@ git clone https://github.com/dpatzan2/lab6-web.git
 
 2. **Configurar la base de datos**
 
-- Asegúrate de tener MongoDB ejecutándose localmente
-- La aplicación se conectará por defecto a `mongodb://localhost:27017`
+- Tener una conexión por defecto de mongodb corriendo de manera local
+
 
 3. **Instalar dependencias y ejecutar**
 
@@ -85,8 +85,6 @@ cargo watch -x run  # Para desarrollo con recarga automática
 ![Eliminar partido](https://github.com/user-attachments/assets/c3ed2925-c170-412b-bec5-dae3715cdc68)
 
 *Campo para insertar el id del partido a elimininar*
-
-# 🏆 API de Gestión de Partidos Deportivos
 
 ## 🛠️ Desarrollo
 
