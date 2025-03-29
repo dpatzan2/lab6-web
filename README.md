@@ -58,27 +58,35 @@ cargo watch -x run  # Para desarrollo con recarga automática
 
 ### Interfaz de Listado de Partidos
 
-![Listado de partidos](https://github.com/user-attachments/assets/0074d0c1-300e-4f56-b90f-7043e7a360ea)
+![Listado de partidos](https://github.com/user-attachments/assets/6edcbaa8-372e-4f18-8c32-32ef815858f7)
+
 
 *Vista principal que muestra todos los partidos disponibles obtenidos mediante `GET /api/matches`*
 
 ### Formulario de Creación
 
-![Crear partido](https://github.com/user-attachments/assets/de71b9af-a10a-431e-9ff0-a93c7539c82b)
+![Crear partido](https://github.com/user-attachments/assets/784f0489-62d9-4a61-a582-72fb47408273)
 
 *Formulario que envía datos a `POST /api/matches` para crear nuevos partidos*
 
 ### Detalle de Partido
 
-![Detalle de partido](https://github.com/user-attachments/assets/325b9c94-6416-4a6b-bfae-b7141a7780ab)
+![Detalle de partido](https://github.com/user-attachments/assets/c46038e9-3d3c-4e15-9589-409f110d83aa)
+
 
 *Vista detallada que consume `GET /api/matches/{id}` para mostrar información específica*
 
 ### Edición de Partido
 
-![Editar partido](https://github.com/user-attachments/assets/40b333e3-7774-4295-b1ac-755250e8325b)
+![Editar partido](https://github.com/user-attachments/assets/8de5c575-20b5-40a5-82a5-c7fb366b95ae)
 
 *Formulario de edición que utiliza `PUT /api/matches/{id}` para actualizar datos*
+
+### Eliminiar partido
+
+![Eliminar partido](https://github.com/user-attachments/assets/c3ed2925-c170-412b-bec5-dae3715cdc68)
+
+*Campo para insertar el id del partido a elimininar*
 
 # 🏆 API de Gestión de Partidos Deportivos
 ## 🛠️ Desarrollo
@@ -105,4 +113,4 @@ Cada archivo cumple un rol específico:
 
 ## 🔌 Colección de Postman
 
-Para facilitar las pruebas de la API, puedes importar nuestra [colección de Postman](https://www.postman.com/collections/mi-primer-api) que incluye todos los endpoints documentados y ejemplos de uso.
+Para facilitar las pruebas de la API, pueden importar nuestra [colección de Postman](https://documenter.getpostman.com/view/19231920/2sB2cPj5aU) que incluye todos los endpoints documentados y ejemplos de uso.
